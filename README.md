@@ -1,3 +1,3 @@
-# Flutter Facebook Responsive UI Tutorial
+# Flutter Facebook Responsive UI
 
 This project is created by Harsh Tyagi(harshtyagimdr)
