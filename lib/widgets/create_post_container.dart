@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_responsive_ui/models/models.dart';
 import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
+import 'package:toast/toast.dart';
 
 class CreatePostContainer extends StatelessWidget {
   final User currentUser;
@@ -44,7 +45,9 @@ class CreatePostContainer extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   FlatButton.icon(
-                    onPressed: () => print('Live'),
+                    onPressed: () => Toast.show(
+                        "Live feature not added yet.", context,
+                        duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
                     icon: const Icon(
                       Icons.videocam,
                       color: Colors.red,
@@ -53,7 +56,9 @@ class CreatePostContainer extends StatelessWidget {
                   ),
                   const VerticalDivider(width: 8.0),
                   FlatButton.icon(
-                    onPressed: () => print('Photo'),
+                    onPressed: () => Toast.show(
+                        "Image feature not added yet.", context,
+                        duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
                     icon: const Icon(
                       Icons.photo_library,
                       color: Colors.green,
@@ -62,7 +67,9 @@ class CreatePostContainer extends StatelessWidget {
                   ),
                   const VerticalDivider(width: 8.0),
                   FlatButton.icon(
-                    onPressed: () => print('Room'),
+                    onPressed: () => Toast.show(
+                        "Room feature not added yet.", context,
+                        duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
                     icon: const Icon(
                       Icons.video_call,
                       color: Colors.purpleAccent,

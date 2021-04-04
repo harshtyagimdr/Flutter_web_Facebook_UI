@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_facebook_responsive_ui/config/palette.dart';
 import 'package:flutter_facebook_responsive_ui/models/models.dart';
 import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
+import 'package:toast/toast.dart';
 
 class Stories extends StatelessWidget {
   final User currentUser;
@@ -105,7 +106,9 @@ class _StoryCard extends StatelessWidget {
                     icon: const Icon(Icons.add),
                     iconSize: 30.0,
                     color: Palette.facebookBlue,
-                    onPressed: () => print('Add to Story'),
+                    onPressed: () => Toast.show(
+                        "Add story feature not added yet.", context,
+                        duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
                   ),
                 )
               : ProfileAvatar(

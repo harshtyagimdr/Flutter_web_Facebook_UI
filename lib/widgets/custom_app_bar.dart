@@ -67,13 +67,16 @@ class CustomAppBar extends StatelessWidget {
                 CircleButton(
                   icon: Icons.search,
                   iconSize: 30.0,
-                  onPressed: () => Toast.show("Toast plugin app", context,
+                  onPressed: () => Toast.show(
+                      "Search feature not added yet.", context,
                       duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
                 ),
                 CircleButton(
                   icon: MdiIcons.facebookMessenger,
                   iconSize: 30.0,
-                  onPressed: () => print('Messenger'),
+                  onPressed: () => Toast.show(
+                      "Meassage feature not added yet.", context,
+                      duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
                 ),
               ],
             ),

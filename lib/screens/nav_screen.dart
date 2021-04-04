@@ -43,7 +43,16 @@ class _NavScreenState extends State<NavScreen> {
     Scaffold(
       body: Container(
         child: Center(
-          child: Text('Coming soon...'),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
+            child: Text(
+              'Contact to Harsh Tyagi or visit harshtyagimdr github repo for source code.',
+              style: TextStyle(
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0),
+            ),
+          ),
         ),
       ),
     ),

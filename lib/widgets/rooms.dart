@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_facebook_responsive_ui/config/palette.dart';
 import 'package:flutter_facebook_responsive_ui/models/models.dart';
 import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
+import 'package:toast/toast.dart';
 
 class Rooms extends StatelessWidget {
   final List<User> onlineUsers;
@@ -56,7 +57,8 @@ class _CreateRoomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlineButton(
-      onPressed: () => print('Create Room'),
+      onPressed: () => Toast.show("Live feature not added yet.", context,
+          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30.0),
       ),

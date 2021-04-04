@@ -4,6 +4,7 @@ import 'package:flutter_facebook_responsive_ui/config/palette.dart';
 import 'package:flutter_facebook_responsive_ui/models/models.dart';
 import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:toast/toast.dart';
 
 class PostContainer extends StatelessWidget {
   final Post post;
@@ -106,7 +107,8 @@ class _PostHeader extends StatelessWidget {
         ),
         IconButton(
           icon: const Icon(Icons.more_horiz),
-          onPressed: () => print('More'),
+          onPressed: () => Toast.show("More feature not added yet.", context,
+              duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
         ),
       ],
     );

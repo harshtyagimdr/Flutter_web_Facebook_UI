@@ -75,7 +75,9 @@ class _HomeScreenMobile extends StatelessWidget {
             CircleButton(
               icon: MdiIcons.facebookMessenger,
               iconSize: 30.0,
-              onPressed: () => print('Messenger'),
+              onPressed: () => Toast.show(
+                  "Message feature not added yet.", context,
+                  duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM),
             ),
           ],
         ),
